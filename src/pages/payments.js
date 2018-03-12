@@ -132,7 +132,7 @@ const MyForm = (props) => {
       </li>
 
       <li>
-        <Button type="submit">Submit</Button>
+        <button type="submit">Submit</button>
       </li>
     </ul>
   </Form>
@@ -186,7 +186,7 @@ class Checkout extends React.Component {
 
   reqPayment(values) {
     var valuesstring = JSON.stringify(values, null, 2);
-    fetch("http://localhost:8080/",  {
+    fetch("https://sherpafeet.com/ootyultra",  {
       method: 'POST',
       headers: {
         'Accept': 'application/json',
@@ -265,7 +265,7 @@ class Checkout extends React.Component {
 
         <div id="scriptContainer">
           <ConditionalShow display={longUrl}>
-              <Button onClick={this.openCheckout}> Pay Now </Button>
+              <button onClick={this.openCheckout}> Pay Now </button>
           </ConditionalShow>
         </div>
       </div>
