@@ -5,6 +5,7 @@ import { css } from 'react-emotion'
 
 const aboutUl = css`
   text-align: left;
+  margin: 0px 64px;
   & li {
     margin: 16px;
   }
@@ -16,7 +17,6 @@ export default function First(props) {
   return (
     <section id="first" className="main">
       <header>
-        <div className="container">
           <ul className={aboutUl}>
             <li>
               OOTYULTRA is an ultramarathon founded by Kannan Sundararajan, a.k.a Coach Kay, founder of KaysFIT Academy.
@@ -41,7 +41,6 @@ export default function First(props) {
               The first edition of OOTYULTRA is expected to attract over ~200 participants from across India, indirectly promoting Marathon Tourism in The Nilgiris
             </li>
           </ul>
-        </div>
       </header>
     </section>
   );

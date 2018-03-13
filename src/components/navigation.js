@@ -8,7 +8,7 @@ import media from '../utils/media'
 const navItemStyles = css`
   box-sizing: border-box;
   display: inline-block;
-  color: inherit;
+  color: ${colors.mountain3};
   text-decoration: none;
   text-transform: uppercase;
   border-bottom: none;
@@ -20,6 +20,7 @@ const navItemStyles = css`
   transition: color .15s ease-out;
   &:hover: {
     opacity: 0.8;
+    color: ${colors.mountain2};
   };
 `;
 const NavItem = ({ linkTo, children }) => (
@@ -57,22 +58,25 @@ export default ({ pathname }) => {
   const gutters = isHomepage
     ? {
         paddingLeft: `32px`,
-        paddingRight: `32px`,
-        paddingTop: `32px`,
+        paddingRight: `0px`,
+        paddingTop: `64px`,
         [presets.Hd]: {
-          paddingLeft: `64px`,
-          paddingRight: `64px`,
+          paddingLeft: `32px`,
+          paddingRight: `0px`,
         },
         [presets.VHd]: {
-          paddingLeft: `64px`,
-          paddingRight: `64px`,
+          paddingLeft: `32px`,
+          paddingRight: `0px`,
         },
         [presets.VVHd]: {
-          paddingLeft: `64px`,
-          paddingRight: `64px`,
+          paddingLeft: `32px`,
+          paddingRight: `0px`,
         },
       }
     : {};
+
+ const guttersClass = css(gutters);
+
 
   const displayLogo = isHomepage
     ? {
@@ -127,6 +131,7 @@ export default ({ pathname }) => {
            ${navPositionClass};
         `};
         ${stylesClass};
+        ${guttersClass};
       `}
     >
       <div

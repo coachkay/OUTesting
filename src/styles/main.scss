@@ -716,7 +716,7 @@
 		margin: 0;
 		background-image: url('../images/overlay.png'), url('../images/header.jpg');
 		background-size: auto, cover;
-		background-position: top left, center center;
+		background-position: top left, top left;
 		background-repeat: repeat, no-repeat;
 		padding: 14em 0 14em 0;
 		text-align: center;
@@ -860,7 +860,7 @@
 		/* Header */
 
 			#header {
-				padding: 12em 0 12em 0;
+				padding: 21em 0 12em 0;
 			}
 
 		/* Main Sections */
