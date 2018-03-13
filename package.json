@@ -41,22 +41,22 @@
     "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {
-    "babel-jest": "^21.2.0",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "enzyme": "^3.1.0",
-    "enzyme-adapter-react-16": "^1.0.2",
-    "enzyme-to-json": "^3.1.4",
-    "gh-pages": "^1.1.0",
-    "identity-obj-proxy": "^3.0.0",
-    "jest": "^21.2.1",
-    "nightwatch": "^0.9.16",
-    "prettier": "~1.7.2",
-    "react-test-renderer": "^16.0.0",
-    "selenium-download": "^2.0.10",
-    "selenium-server-standalone-jar": "^3.6.0",
-    "selenium-webdriver": "^3.6.0"
+    "babel-jest": "21.2.0",
+    "babel-polyfill": "6.26.0",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-react": "6.24.1",
+    "enzyme": "3.3.0",
+    "enzyme-adapter-react-16": "1.1.1",
+    "enzyme-to-json": "3.3.1",
+    "gh-pages": "1.1.0",
+    "identity-obj-proxy": "3.0.0",
+    "jest": "21.2.1",
+    "nightwatch": "0.9.20",
+    "prettier": "1.7.4",
+    "react-test-renderer": "16.2.0",
+    "selenium-download": "2.0.12",
+    "selenium-server-standalone-jar": "3.9.1",
+    "selenium-webdriver": "3.6.0"
   },
   "resolutions": {
     "gatsby-plugin-netlify-cms/netlify-cms": "1.1.0"
