@@ -24,13 +24,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `netlifyimages`,
-        path: `${__dirname}/static/img/`
-      }
-    },
-    {
       resolve: `gatsby-source-contentful`,
       options: {
         spaceId: process.env.CONTENTFUL_OU_SPACEID,
