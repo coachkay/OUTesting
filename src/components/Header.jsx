@@ -7,15 +7,15 @@ export default function Header(props) {
   return (
     <section id="header" className="dark">
       <header>
-        <h1>Hampta Treks & Tours</h1>
-        <p>Best Service & Best Price</p>
+        <h1>OOTY ULTRA</h1>
+        <p>60k, 30k & 15k</p>
         <p>
-         Join us for the Hampta Pass, Hampta Circle, Bhrigu Lake and other treks in the valley
+         Ooty, also known as the Queen of Hills is filled with breathtaking mountains
+         and beautifully wooded forests.
        </p>
-       <p>Contact +91 9736842584</p>
       </header>
       <footer>
-        <a href="#first" className="button scrolly">Browse Our Treks</a>
+        <Link to="/register" className="button scrolly">Register</Link>
       </footer>
     </section>
   );

@@ -232,9 +232,16 @@ class Checkout extends React.Component {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            margin-top: 32px;
+            background-color: rgba(31, 116, 28, 1);
           `}>
-        <h2> Ooty Ultra Registrations </h2>
+
+        <div style={{
+                marginTop: `64px`
+              }}
+              className="dark"
+        >
+          <h1> OOTY ULTRA REGISTRATION </h1>
+        </div>
 
         { !longUrl && <div css={`
               margin: 32px;

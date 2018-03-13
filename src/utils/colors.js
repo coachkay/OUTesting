@@ -58,8 +58,8 @@ const colors = {
   // original palette by @SachaG
   // @see https://www.figma.com/file/J6IYJEtdRmwJQOrcZ2DfvxDD/Gatsby
   mountain1: `#FA7921`, // was #744c9e
-  mountain2: `#FE9920`, // was #744c9e
-  mountain3: `#B9A44C`, // was #744c9e
+  mountain2: `#B9A44C`, // was #744c9e
+  mountain3: `rgba(31, 116, 28, 0.9)`, // was #744c9e 
   mountain4: `#566E3D`, // was #744c9e
   mountain5: `#0C4767`, // was #744c9e
   mountain6: `#0C4767`, // was #744c9e

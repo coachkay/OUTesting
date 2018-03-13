@@ -31,9 +31,6 @@ const IndexPage = (props) => {
   const { location, data, pathContext } = props
   const { data: apiData } = pathContext;
   const { edges : images } = data.allImageSharp
-  const heading = location.pathname == "/expedition/"
-    ? 'Contact us to check your eligibility to join our expeditions'
-    : 'We would love to host you on one of our himalayan treks';
 
   const title = location.pathname == "/expedition/"
     ? 'Hampta Expeditions'
@@ -55,7 +52,7 @@ const IndexPage = (props) => {
         {data.bgImage.resize.src && (
           <meta
             property="og:image"
-            content={`https://hampta.com${
+            content={`https://ootyultra.com${
               data.bgImage.resize.src
             }`}
           />
@@ -63,7 +60,7 @@ const IndexPage = (props) => {
         {data.bgImage.resize.src && (
           <meta
             name="twitter:image"
-            content={`https://hampta.com${
+            content={`https://ootyultra.com${
               data.bgImage.resize.src
             }`}
           />
@@ -77,13 +74,6 @@ const IndexPage = (props) => {
             text-align: center;
           `}
      >
-       <FlexTagBox>
-           <Tag style={{backgroundColor: `${colors.mountain3}`}}> Best Price </Tag>
-           <Tag style={{backgroundColor: `${colors.mountain4}`}}> Best Service </Tag>
-           <Tag style={{backgroundColor: `${colors.mountain3}`}}> Group Discounts </Tag>
-           <Tag style={{backgroundColor: `${colors.mountain4}`}}> Customised Treks </Tag>
-           <Tag style={{backgroundColor: `${colors.mountain3}`}}> Contact us @ +91 9736842584 </Tag>
-       </FlexTagBox>
        <br />
        <h3> {heading} </h3>
      </div>
@@ -93,14 +83,6 @@ const IndexPage = (props) => {
            justifyContent: 'center'
          }}
      >
-      {
-        apiData.allMarkdownRemark.edges.map((post, index) => {
-          const { node } = post
-          return (
-            <BlogCard key={node.id} post={node} images={images}/>
-          )
-        })
-      }
       </div>
     </div>
   )
@@ -114,7 +96,6 @@ export const blogQuery = graphql`
         src
       }
     }
-    ...trekCard
   }
 `;
 

@@ -8,17 +8,17 @@ import '../styles/main.scss';
 
 export default function Index(props) {
   const { data } = props;
-  const title = 'Hampta Treks & Tours';
-  const description = 'Join us for the treks and tours in the Manali and Kullu region. Hampta Pass, Hampta Circle are some of our famous treks.';
+  const title = 'Ooty Ultra';
+  const description = 'Ooty Ultra, 60k, 30k & 15k, April 29 2018';
 
   return (
     <div>
       <Helmet>
         <title> {title} </title>
         <meta name="description" content={description} />
-        <meta name="Keywords" content={'hampta pass trek, hampta circle trek, hampta circuit trek'} />
+        <meta name="Keywords" content={'ultra marathon, india, race, running, marathon'} />
         <meta property="og:title" content={title} />
-        <meta property="og:url" content={`https://hampta.com`} />
+        <meta property="og:url" content={`https://ootyultra.com`} />
         <meta
           property="og:description"
           content={description}
@@ -30,7 +30,7 @@ export default function Index(props) {
         {data.bgImage.resize.src && (
           <meta
             property="og:image"
-            content={`https://hampta.com${
+            content={`https://ootyultra.com${
               data.bgImage.resize.src
             }`}
           />
@@ -38,7 +38,7 @@ export default function Index(props) {
         {data.bgImage.resize.src && (
           <meta
             name="twitter:image"
-            content={`https://hampta.com${
+            content={`https://ootyultra.com${
               data.bgImage.resize.src
             }`}
           />

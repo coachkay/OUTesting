@@ -1,7 +1,7 @@
 import React from "react"
 import Link from "gatsby-link"
 import { css } from 'react-emotion'
-import logo from "../hamptatreks.png"
+import logo from "../ootyultralogo.png"
 import presets, { colors } from "../utils/presets"
 import media from '../utils/media'
 
@@ -26,7 +26,7 @@ const NavItem = ({ linkTo, children }) => (
   <li
     css={`
       display: inline-block;
-      margin: 0;
+      margin: 8px;
     `}
   >
     <Link to={linkTo} className={navItemStyles}>
@@ -155,7 +155,7 @@ export default ({ pathname }) => {
           <img
             src={logo}
             css={`
-              height: 2.5rem;
+              height: 4rem;
               margin: 0;
             `}
             alt=""
@@ -165,7 +165,7 @@ export default ({ pathname }) => {
                 padding-left: 16px;
               `}
           >
-            Hampta Treks & Tours
+            OOTY ULTRA
           </h3>
         </Link>
         <ul
@@ -184,9 +184,11 @@ export default ({ pathname }) => {
               `};
           `}
         >
-          <NavItem linkTo="/trek/">Treks</NavItem>
-          <NavItem linkTo="/reviews/">Reviews</NavItem>
-          <NavItem linkTo="/blog/">Blog</NavItem>
+          <NavItem linkTo="/about/">About</NavItem>
+          <NavItem linkTo="/race-info/">Race Info</NavItem>
+          <NavItem linkTo="/faqs/">FAQ</NavItem>
+          <NavItem linkTo="/register/">Register</NavItem>
+          <NavItem linkTo="/updates/">Updates</NavItem>
         </ul>
       </div>
     </div>

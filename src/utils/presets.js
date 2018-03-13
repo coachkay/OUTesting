@@ -33,5 +33,5 @@ module.exports = {
     speedFast: `100ms`,
   },
   logoOffset: 1.8,
-  headerHeight: `3.5rem`,
+  headerHeight: `4.5rem`,
 }

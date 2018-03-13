@@ -52,12 +52,12 @@ export default () => (
       `};
     `}
   >
-    <MobileNavItem linkTo="/trek/" label="Treks" icon={TrekIcon} />
+    <MobileNavItem linkTo="/race/" label="RACE" icon={TrekIcon} />
     <MobileNavItem
-      linkTo="/reviews/"
-      label="Reviews"
+      linkTo="/register/"
+      label="REGISTER"
       icon={ReviewsIcon}
     />
-    <MobileNavItem linkTo="/blog/" label="Blog" icon={BlogIcon} />
+  <MobileNavItem linkTo="/faq/" label="FAQ" icon={BlogIcon} />
   </div>
 )

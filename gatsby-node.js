@@ -1,8 +1,6 @@
 const path = require('path');
 const parseFilepath = require('parse-filepath');
 const slash = require('slash');
-const createTrekPages = require('./graphQL/createTrekPages');
-const createIndexPage = require('./graphQL/createIndexPage');
 
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   const { createNodeField } = boundActionCreators;
@@ -32,6 +30,6 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
 
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
-  createTrekPages(createPage, graphql);
-  createIndexPage(createPage, graphql, "/trek/", "/trek");
+  //createTrekPages(createPage, graphql);
+  //createIndexPage(createPage, graphql, "/trek/", "/trek");
 };

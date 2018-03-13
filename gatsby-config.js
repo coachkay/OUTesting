@@ -24,10 +24,24 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: `${__dirname}/src/images`,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `netlifyimages`,
         path: `${__dirname}/static/img/`
+      }
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: process.env.CONTENTFUL_OU_SPACEID,
+        accessToken: process.env.CONTENTFUL_OU_ACCESSTOKEN
       }
     },
     {
@@ -52,9 +66,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: "Hampta Treks & Tours",
-        short_name: "Hampta Treks",
-        start_url: "/trek/",
+        name: "Ooty Ultra",
+        short_name: "Ooty Ultra",
+        start_url: "/",
         background_color: "#ffffff",
         theme_color: "#B9A44C",
         display: "minimal-ui",
@@ -69,89 +83,6 @@ module.exports = {
             type: `image/png`,
           },
         ],
-      },
-    },
-    {
-      resolve: `gatsby-source-graphql`,
-      options: {
-        endpoint: `https://sherpafeet.com/graphql`,
-        query: `{
-          ratings (guideuid: "RaviThakur") {
-            _id
-            comment
-            destination
-            month
-            year
-            rating
-            attractions {
-              snow
-              rivercrossings
-              meadows
-              wildlife
-              villagestay
-              localfestival
-              forests
-              camping
-              waterbody
-              rivercrossings
-            }
-            raterid
-            date
-            usr {
-              picture
-              firstname
-              lastname
-            }
-         }
-         treksWithTag (tag: "all") {
-           _id, level, profileurl, season, months, region, overview, picarray, metadescription,
-           noofdays, itinerary, rank, type, minage, altitude,
-          attractions { meadows, snow, wildlife,
-                        villagestay,
-                        localfestival,
-                        forests,
-                        camping,
-                        waterbody,
-                        rivercrossings,
-                        }
-           blogs { href, author, title, image, description }
-           faqs,
-         }
-         guideDepartures (guideuid: "RaviThakur") {
-          _id
-          trekid
-          guideuid
-          noofdays
-          packagename
-          packagetype
-          packagelevel
-          startingfrom
-          endsat
-          packageoverview
-          trekkingdays
-          trekkingdistance
-          transportation
-          fooddetails
-          inclusions
-          exclusions
-          accommodation
-          packagehighlights
-          itinerary  {
-              startpoint
-              endpoint
-              maxaltitude
-              distancecovered
-              accomodationtype
-              dayhighlights
-          }
-          pricing {
-            price
-            note
-          }
-          maxseats
-          departure
-          }
-        }`,
       },
     },
     `gatsby-plugin-netlify-cms`,

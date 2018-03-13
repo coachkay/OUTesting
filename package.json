@@ -23,6 +23,7 @@
     "gatsby-plugin-sass": "^1.0.14",
     "gatsby-plugin-sharp": "^1.6.8",
     "gatsby-remark-images": "^1.5.13",
+    "gatsby-source-contentful": "^1.3.44",
     "gatsby-source-filesystem": "^1.5.1",
     "gatsby-transformer-remark": "^1.7.12",
     "gatsby-transformer-sharp": "^1.6.19",
