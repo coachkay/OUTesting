@@ -188,7 +188,6 @@ export default ({ pathname }) => {
           <NavItem linkTo="/race-info/">Race Info</NavItem>
           <NavItem linkTo="/faqs/">FAQ</NavItem>
           <NavItem linkTo="/register/">Register</NavItem>
-          <NavItem linkTo="/updates/">Updates</NavItem>
         </ul>
       </div>
     </div>

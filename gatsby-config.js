@@ -45,7 +45,8 @@ module.exports = {
             options: {
               linkImagesToOriginal: false
             }
-          }
+          },
+          `gatsby-remark-responsive-iframe`,
         ]
       }
     },
