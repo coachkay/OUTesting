@@ -113,6 +113,12 @@ const MyForm = (props) => {
       </li>
 
       <li>
+        <label htmlFor="dateofbirth"> Date Of Birth < /label>
+        <Field type="date" name="dateofbirth" placeholder="" validate={required}/>
+        <Error name="dateofbirth" />
+      </li>
+
+      <li>
         <label htmlFor="gender"> Gender < /label>
         <Field component="select" name="gender" placeholder="">
           <option value="male">Male</option>
@@ -126,6 +132,41 @@ const MyForm = (props) => {
         <Field type="text" name="mobilenumber" placeholder="Mobile Number" />
         <Error name="mobilenumber" />
       </li>
+
+      <li>
+        <label htmlFor="address"> Address < /label>
+        <Field type="textarea" name="address" placeholder="" validate={required}/>
+        <Error name="address" />
+      </li>
+
+      <li>
+        <label htmlFor="state"> State < /label>
+        <Field type="text" name="state" placeholder="State" />
+        <Error name="state" />
+      </li>
+
+      <li>
+        <label htmlFor="nationality"> Nationality < /label>
+        <Field type="text" name="nationality" placeholder="Nationality" />
+        <Error name="nationality" />
+      </li>
+
+      <li>
+        <label htmlFor="comrades"> Are you running the Comrades? < /label>
+        <Field component="select" name="comrades" placeholder="">
+          <option value="yes">YES</option>
+          <option value="no">NO</option>
+        </Field>
+        <Error name="comrades" />
+      </li>
+
+      <li>
+        <label htmlFor="why"> Why do you want to participate in the Ooty Ultra 2018 < /label>
+        <Field type="textarea" name="why" placeholder="" validate={required}/>
+        <Error name="why" />
+      </li>
+
+
 
       <li>
         {`Amount `} {getSymbolFromCurrency(CONFIGURATION.currency)} 3000/-
@@ -163,9 +204,6 @@ class Checkout extends React.Component {
   }
 
   componentDidMount() {
-        var script = document.createElement("script");
-        script.src="https://js.instamojo.com/v1/checkout.js";
-        document.getElementById("scriptContainer").appendChild(script);
   }
 
 
@@ -242,39 +280,7 @@ class Checkout extends React.Component {
         >
           <h1> OOTY ULTRA REGISTRATION </h1>
         </div>
-
-        { !longUrl && <div css={`
-              margin: 32px;
-              padding: 32px;
-              width: 100%;
-              max-width: 700px;
-              background-color: white;
-              border: 1px solid ${colors.mountain3};
-            `}
-        >
-            <Formik
-              onSubmit={this.submitform}
-              validate={validate}
-              component={MyForm}
-            />
-          </div>
-        }
-        {
-          longUrl && <div>
-
-            Thank you.
-
-            Kindly proceed with payment.
-
-           </div>
-
-        }
-
-        <div id="scriptContainer">
-          <ConditionalShow display={longUrl}>
-              <button onClick={this.openCheckout}> Pay Now </button>
-          </ConditionalShow>
-        </div>
+        <iframe src="https://www.townscript.com/widget/ooty-ultra-2018-60k-30k-15k-302134" frameborder="0" height="900" width="80%"></iframe>
       </div>
     );
   }
