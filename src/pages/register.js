@@ -278,6 +278,42 @@ class Checkout extends React.Component {
               }}
               className="dark"
         >
+          <p><strong>Registration fee</strong></p>
+            <table css={`
+                    height: 23px;
+                    width: 383px;
+                    border: 0.5px solid;
+                   `}
+            >
+              <tbody>
+                <tr css="border: 0.5px solid;">
+                  <td css="width: 61px; text-align: center;border: 0.5px solid; padding: 8px;"><strong>Category</strong></td>
+                  <td css="width: 111.802px; text-align: center; border: 0.5px solid; padding: 8px;"><strong>Amount (₹)</strong></td>
+                  <td css="width: 196.198px; text-align: center; border: 0.5px solid; padding: 8px;"><strong>Add-on</strong></td>
+                </tr>
+                <tr css="border: 0.5px solid; border: 0.5px solid;">
+                  <td css="width: 61px; text-align: center; border: 0.5px solid;">60k</td>
+                  <td css="width: 111.802px; text-align: center; border: 0.5px solid;">1950</td>
+                  <td css="width: 196.198px; text-align: center; border: 0.5px solid;" rowspan="3">₹ 190 for the optional pre-marathon dinner</td>
+                </tr>
+                <tr css="border: 0.5px solid;">
+                  <td css="width: 61px; text-align: center; border: 0.5px solid;">30k</td>
+                  <td css="width: 111.802px; text-align: center;">1650</td>
+                </tr>
+                <tr css="border: 0.5px solid;">
+                  <td css="width: 61px; text-align: center; border: 0.5px solid;">15k</td>
+                  <td css="width: 111.802px; text-align: center;">950</td>
+              </tr>
+              </tbody>
+            </table>
+          <p><strong>* Registration amount includes all applicable fees.&nbsp; </strong><strong>Dinner will have 5% GST added.</strong></p>
+          <p css="font-size: 25px;"><strong>Hurry up! avail early bird offer!</strong></p>
+          <ul>
+          <li><strong>Flat discount of Rs. 150/- on 60k and 30k</strong> on 14th &amp; 15th of Mar 2018</li>
+          <li><strong>Flat discount of Rs. 100/- on 60k and 30k</strong> on 16th Mar 2018</li>
+          </ul>
+          <p>&nbsp;</p>
+          <h1> Registration fee: 60k &#8377; 1950/-  </h1>
           <h1> OOTY ULTRA REGISTRATION </h1>
         </div>
         <iframe src="https://www.townscript.com/widget/ooty-ultra-2018-60k-30k-15k-302134" frameborder="0" height="900" width="80%"></iframe>
